@@ -1,21 +1,28 @@
+@font-face {
+    font-family: PlayfairDisplay;
+    src: url("fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
+
 .container {
     width: 100%;
     margin: auto;
 }
 
 html {
-    font-family: Verdana;
+    font-family: PlayfairDisplay, Helvetica, sans-serif;
 }
 
 body {
+    font-family: PlayfairDisplay, sans-serif;
     margin: 0;
 }
 
 h1 {
     text-align: left;
     display: block;
-    padding-top: 2rem;
+    padding: 2rem;
     width: 100%;
+    font-family: Helvetica, sans-serif;
 }
 
 b {
@@ -49,7 +56,7 @@ li a:hover {
 }
 
 main {
-    background-color: darkgray;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1016%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(175%2c 170%2c 172%2c 1)'%3e%3c/rect%3e%3cpath d='M -375.3483346674908%2c140 C -279.35%2c208 -87.35%2c454.8 104.65166533250922%2c480 C 296.65%2c505.2 392.65%2c282.8 584.6516653325092%2c266 C 776.65%2c249.2 872.65%2c418 1064.6516653325093%2c396 C 1256.65%2c374 1469.58%2c138 1544.6516653325093%2c156 C 1619.72%2c174 1460.93%2c420 1440%2c486' stroke='rgba(148%2c 121%2c 144%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -835.6168775392694%2c300 C -739.62%2c280.4 -547.62%2c163.4 -355.61687753926935%2c202 C -163.62%2c240.6 -67.62%2c516.2 124.38312246073065%2c493 C 316.38%2c469.8 412.38%2c126.2 604.3831224607306%2c86 C 796.38%2c45.8 917.26%2c279.6 1084.3831224607306%2c292 C 1251.51%2c304.4 1368.88%2c176.8 1440%2c148' stroke='rgba(148%2c 121%2c 144%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -679.4057061510705%2c114 C -583.41%2c183.4 -391.41%2c436 -199.40570615107043%2c461 C -7.41%2c486 88.59%2c256.8 280.59429384892957%2c239 C 472.59%2c221.2 568.59%2c372 760.5942938489295%2c372 C 952.59%2c372 1104.71%2c253.4 1240.5942938489295%2c239 C 1376.48%2c224.6 1400.12%2c287.8 1440%2c300' stroke='rgba(148%2c 121%2c 144%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -62.39647592343596%2c439 C 33.6%2c396.2 225.6%2c227.6 417.60352407656404%2c225 C 609.6%2c222.4 705.6%2c456.4 897.6035240765641%2c426 C 1089.6%2c395.6 1185.6%2c99.4 1377.603524076564%2c73 C 1569.6%2c46.6 1845.12%2c258.4 1857.603524076564%2c294 C 1870.08%2c329.6 1523.52%2c259.6 1440%2c251' stroke='rgba(148%2c 121%2c 144%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1016'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -64,44 +71,18 @@ figure {
 .center {
     background-color: rosybrown;
     display: block;
-    width: 50%;
-    height: 10%;
+    width: 80%;
+    height: 50%;
     padding: 40px;
     margin-left: auto;
     margin-right: auto;
-}
-
-figcaption {
-    text-align: center;
-    padding: 1rem;
+    border: 1px black solid;
 }
 
 article {
     width: calc(100% / 3);
     display: block;
-    height: 20%;
-    padding: 1rem;
-    box-sizing: border-box;
-    background-color: rosybrown;
-    border-radius: 8px 8px 8px 8px;
-    border: 1px black solid;
-}
-
-article2 {
-    width: calc(100% / 3);
-    display: block;
-    height: 20%;
-    padding: 1rem;
-    box-sizing: border-box;
-    background-color: lightgrey;
-    border-radius: 8px 8px 8px 8px;
-    border: 1px black solid;
-}
-
-article3 {
-    width: calc(100% / 3);
-    display: block;
-    height: 20%;
+    height: 10%;
     padding: 1rem;
     box-sizing: border-box;
     background-color: rosybrown;
@@ -156,7 +137,11 @@ p {
 
 article {
     width: calc(100% / 3);
+    display: block;
+    height: 20%;
     padding: 1rem;
     box-sizing: border-box;
+    background-color: rosybrown;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px black solid;
 }
-
