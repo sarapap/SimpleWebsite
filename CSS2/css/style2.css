@@ -99,9 +99,10 @@ img {
 
 figcaption {
     font-style: italic;
+    font-size: small;
     text-align: left;
     padding-top: 3px;
-    color: white;
+    color: black;
 }
 
 p {
