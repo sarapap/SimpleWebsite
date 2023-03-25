@@ -25,8 +25,8 @@ h1 {
     font-family: Helvetica, sans-serif;
 }
 
-b {
-    font-size: x-large;
+li {
+    font-size: large;
     text-align: center;
     display: block;
     width: 100%;
